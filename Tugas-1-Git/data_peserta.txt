@@ -1,0 +1,6 @@
+Data Peserta Sanbercode Bootcamp React Native :
+1. Nama: robertomarkus
+2. Email: robertomarkus@dev.com
+3. Akun Gitlab: @robertomarkus_
+4. Akun Telegram: @markusroberto
+5. Test upload into Github Repository
