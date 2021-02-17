@@ -1,111 +1,58 @@
-var border = "-----------------------------------------------------------"
-
-// Tugas Conditional
-// If-else
-
-console.log(border)
-// Output untuk Input nama = '' dan peran = ''
-var nama = ""
-var peran = ""
-
-if ( nama == "" ) {
-    console.log("Nama harus diisi!")
-} else {
-    console.log("Nama telah dipilih")
+//Soal No 1 werewolf
+console.log('  ')
+console.log('Soal 1 WereWolf Game')
+var Nama = 'Marina'
+var Peran = 'WereWolf'
+var Nama1 = Nama.toLowerCase()
+var Peran1 = Peran.toLowerCase()
+if (Nama1 == ''){console.log('nama harus diisi!')} 
+else if ((Nama1 == 'Markro' || Nama1 == 'Marline' || Nama1 == 'Marina' || Nama1 == 'Marco') && Peran1 == '' ){console.log ('Halo ' + Nama + ', Pilih peranmu untuk memulai game!')}
+else if ((Nama1 == 'Markro' || Nama1 == 'Marline' || Nama1 == 'Marina' || Nama1 == 'Marco') && Peran1 == 'penyihir' ){
+    console.log ('Selamat datang di dunia werewolf, ' + Nama )
+    console.log ('Halo Penyihir ' + Nama + ', kamu dapat melihat siapa yang menjadi werewolf!')
 }
-
-
-console.log(border)
-//Output untuk Input nama = 'John' dan peran = ''
-var nama = "John"
-var peran = ""
-
-if ( peran == "Penyihir" || peran == "Guard" || peran == "Werewolf" ) {
-    console.log("Peran Terpilih!")
-} else {
-    console.log("Halo John, Pilih peranmu untuk memulai game!")
+else if ((Nama1 == 'Markro' || Nama1 == 'Marline' || Nama1 == 'Marina' || Nama1 == 'Marco') && Peran1 == 'guard' ){
+    console.log ('Selamat datang di dunia werewolf, ' + Nama )
+    console.log ('Halo Guard ' + Nama + ', kamu akan membantu melindungi temanmu dari serangan werewolf.')
 }
-
-
-console.log(border)
-//Output untuk Input nama = 'Jane' dan peran 'Penyihir'
-var nama = "Jane"
-var peran = "Penyihir"
-
-if ( nama == "Jane") {
-    console.log("Selamat datang di Dunia Penyihir, Jane")
-
-if ( peran == "Penyihir") {
-    console.log("Halo Penyihir Jane, kamu dapat melihat siapa yang menjadi werewolf!")
-    } else if( peran == "Guard") {
-    console.log("Halo Guard Jane, kamu akan membantu melindungi temanmu dari serangan werewolf.")
-    } else if( peran == "Werewolf") {
-    console.log("Halo Werewolf Jane, Kamu akan memakan mangsa setiap malam!")
-    }
-
-} else {
-    console.log("Data tidak sesuai, silahkan masukan nama dan pilih peran")
+else if ((Nama1 == 'Markro' || Nama1 == 'Marline' || Nama1 == 'Marina' || Nama1 == 'Marco') && Peran1 == 'werewolf' ){
+    console.log ('Selamat datang di dunia werewolf, ' + Nama )
+    console.log ('Halo Werewolf ' + Nama + ', Kamu akan memakan mangsa setiap malam!')
 }
-
-console.log(border)
-//Output untuk Input nama = 'Jenita' dan peran 'Guard'
-var nama = "Jenita"
-var peran = "Guard"
-
-if ( nama == "Jenita") {
-    console.log("Selamat datang di Dunia Guard, Jenita")
-
-if ( peran == "Penyihir") {
-    console.log("Halo Penyihir Jenita, kamu dapat melihat siapa yang menjadi werewolf!")
-    } else if( peran == "Guard") {
-    console.log("Halo Guard Jenita, kamu akan membantu melindungi temanmu dari serangan werewolf.")
-    } else if( peran == "Werewolf") {
-    console.log("Halo Werewolf Jenita, Kamu akan memakan mangsa setiap malam!")
-    }
-
-} else {
-    console.log("Data tidak sesuai, silahkan masukan nama dan pilih peran")
-}
-
-console.log(border)
-//Output untuk Input nama = 'Junaedi' dan peran 'Werewolf'
-var nama = "Junaedi"
-var peran = "Werewolf"
-
-if ( nama == "Junaedi") {
-    console.log("Selamat datang di Dunia Werewolf, Junaedi")
-
-if ( peran == "Penyihir") {
-    console.log("Halo Penyihir Junaedi, kamu dapat melihat siapa yang menjadi werewolf!")
-    } else if( peran == "Guard") {
-    console.log("Halo Guard Junaedi, kamu akan membantu melindungi temanmu dari serangan werewolf.")
-    } else if( peran == "Werewolf") {
-    console.log("Halo Werewolf Junaedi, Kamu akan memakan mangsa setiap malam!")
-    }
-
-} else {
-    console.log("Data tidak sesuai, silahkan masukan nama dan pilih peran")
-}
-
-console.log(border)
+else {console.log('Nama / Peran Tidak terdaftar, silahkan pilih kembali')}
 
 
-// Tugas Conditional
-// Switch Case
+//Soal No 2 format tanggal
+console.log('  ')
+console.log('Soal 2 Format Tanggal')
 
-// var buttonPushed = 1;
-// switch(buttonPushed) {
-//   case 1:   { console.log('matikan TV!'); break; }
-//   case 2:   { console.log('turunkan volume TV!'); break; }
-//   case 3:   { console.log('tingkatkan volume TV!'); break; }
-//   case 4:   { console.log('matikan suara TV!'); break; }
-//   default:  { console.log('Tidak terjadi apa-apa'); }}
-
-
-var hari = "21"
-var bulan = "1" 
-var tahun = "1945"
-
-if ( bulan == "1") {
-  console.log(hari.concat(' ', "Januari",' ', tahun));
-}
+var Day = 30
+var Month = 12
+var Year = 1900
+switch (Month) {
+case 1: if ((Day<=31 && Day>=1) && (Year<=2200 && Year>=1900)){console.log(Day+' Januari '+Year)}
+else {console.log('Something is wrong')}; break;
+case 2: if ((Day<=31 && Day>=1) && (Year<=2200 && Year>=1900)){console.log(Day+' Februari '+Year)}
+else {console.log('Something is wrong')}; break;
+case 3: if ((Day<=31 && Day>=1) && (Year<=2200 && Year>=1900)){console.log(Day+' Maret '+Year)}
+else {console.log('Something is wrong')}; break; 
+case 4: if ((Day<=31 && Day>=1) && (Year<=2200 && Year>=1900)){console.log(Day+' April '+Year)}
+else {console.log('Something is wrong')}; break; 
+case 5: if ((Day<=31 && Day>=1) && (Year<=2200 && Year>=1900)){console.log(Day+' Mei '+Year)}
+else {console.log('Something is wrong')}; break;
+case 6: if ((Day<=31 && Day>=1) && (Year<=2200 && Year>=1900)){console.log(Day+' Juni '+Year)}
+else {console.log('Something is wrong')}; break;
+case 7: if ((Day<=31 && Day>=1) && (Year<=2200 && Year>=1900)){console.log(Day+' Juli '+Year)}
+else {console.log('Something is wrong')}; break; 
+case 8: if ((Day<=31 && Day>=1) && (Year<=2200 && Year>=1900)){console.log(Day+' Agustus '+Year)}
+else {console.log('Something is wrong')}; break; 
+case 9: if ((Day<=31 && Day>=1) && (Year<=2200 && Year>=1900)){console.log(Day+' September '+Year)}
+else {console.log('Something is wrong')}; break; 
+case 10: if ((Day<=31 && Day>=1) && (Year<=2200 && Year>=1900)){console.log(Day+' Oktober '+Year)}
+else {console.log('Something is wrong')}; break;
+case 11: if ((Day<=31 && Day>=1) && (Year<=2200 && Year>=1900)){console.log(Day+' November '+Year)}
+else {console.log('Something is wrong')}; break;
+case 12: if ((Day<=31 && Day>=1) && (Year<=2200 && Year>=1900)){console.log(Day+' Desember '+Year)}
+else {console.log('Something is wrong')}; break; 
+default: console.log('Something is missing');break;
+} 
